@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#7e5656"
+    tools:context="com.example.pc.diarykitm.view.RegisterActivity">
+
+    <ImageView
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="200dp"
+        android:layout_marginBottom="50dp"
+        android:layout_height="150dp" />
+
+    <TableLayout
+        android:layout_gravity="center_horizontal"
+        android:padding="25dp"
+        android:background="#33ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:text="Username:"/>
+            <EditText
+                android:id="@+id/etRegisterUsername"
+                android:layout_width="wrap_content"
+                android:hint="Enter your username"
+                android:textColorHint="#FFF"
+                android:textColor="#FFF"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:text="Email:"/>
+
+            <EditText
+                android:id="@+id/etRegisterEmail"
+                android:layout_width="wrap_content"
+                android:hint="Enter your email"
+                android:textColorHint="#FFF"
+                android:textColor="#FFF"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:text="Password:"/>
+
+            <EditText
+                android:id="@+id/etRegisterPassword"
+                android:layout_width="wrap_content"
+                android:hint="Enter your password"
+                android:textColorHint="#FFF"
+                android:textColor="#FFF"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:text="Repeat password:"/>
+
+            <EditText
+                android:id="@+id/etRegisterPasswordRepeat"
+                android:layout_width="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Repeat your password"
+                android:textColorHint="#FFF"
+                android:textColor="#FFF"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+    <LinearLayout
+        android:paddingTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnRegisterSubmit"
+            android:text="Register"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnRegisterCancel"
+            android:text="Cancel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
