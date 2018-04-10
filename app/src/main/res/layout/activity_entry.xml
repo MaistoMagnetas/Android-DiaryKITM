@@ -8,35 +8,130 @@
     android:layout_height="match_parent"
     tools:context="com.example.pc.diarykitm.view.EntryActivity">
 
+    <TextView
+        android:padding="5dp"
+        android:text="Give a title to your day:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <EditText
         android:id="@+id/etEntryTitle"
+        android:background="#ba4343"
         android:hint="Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:padding="5dp"
+        android:text="What was it about:"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <EditText
         android:id="@+id/etEntryDescription"
         android:hint="Description"
+        android:background="#ba4343"
         android:layout_width="match_parent"
         android:layout_height="150dp" />
 
-    <EditText
-        android:id="@+id/etEntryDate"
-        android:hint="Date"
+    <TextView
+        android:padding="5dp"
+        android:text="Choose your mood:"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <Spinner
+        android:background="#511414"
+        android:id="@+id/entrySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/mood_array"/>
 
-    <Button
-        android:id="@+id/btnEntrySubmit"
-        android:text="Submit"
+    <RadioGroup
+        android:background="#FFF"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Day pace:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/entryRBSlow"
+            android:text="Slow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/entryRBNormal"
+            android:text="Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/entryRBFast"
+            android:text="Fast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <TextView
+        android:text="Day type:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/btnEntryViewAll"
-        android:text="View All"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
 
+        <CheckBox
+            android:id="@+id/entryCB1"
+            android:text="Done anything new?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
+        <CheckBox
+            android:id="@+id/entryCB2"
+            android:text="Met new people?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/entryCB3"
+            android:text="Fulfilled your goals?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnEntrySubmit"
+            android:text="Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnEntryDelete"
+            android:text="Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnEntryUpdate"
+            android:text="Update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnEntryViewAll"
+            android:text="View All"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 </LinearLayout>

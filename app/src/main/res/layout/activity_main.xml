@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#ee152e06"
+    android:background="@color/background"
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context="com.example.pc.diarykitm.view.MainActivity">
 
     <ImageView
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="50dp"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"
         android:src="@mipmap/ic_launcher" />
 
     <LinearLayout
-        android:background="#703232"
         android:layout_gravity="center"
         android:padding="25dp"
+        android:layout_marginBottom="50dp"
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:src="@mipmap/ic_launcher_round"
+                android:src="@drawable/person_icon"
                 android:layout_width="25dp"
                 android:layout_gravity="center"
                 android:layout_height="25dp" />
@@ -39,7 +39,7 @@
                 android:layout_gravity="center_horizontal"
                 android:textColor="#ffffff"
                 android:textColorHint="#ffffff"
-                android:id="@+id/etLoginPassword"
+                android:id="@+id/etLoginUsername"
                 android:hint="Enter your username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -51,18 +51,18 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:src="@mipmap/ic_launcher_round"
+                android:src="@drawable/password_icon"
                 android:layout_width="25dp"
                 android:layout_gravity="center"
                 android:layout_height="25dp" />
 
             <EditText
                 android:layout_gravity="center_horizontal"
-                android:id="@+id/etLoginUsername"
+                android:id="@+id/etLoginPassword"
                 android:textColor="#ffffff"
                 android:textColorHint="#ffffff"
                 android:inputType="textPassword"
-                android:hint="Enter your username"
+                android:hint="Enter your password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -70,23 +70,35 @@
     </LinearLayout>
 
     <LinearLayout
-        android:paddingTop="25dp"
         android:layout_gravity="center"
-        android:orientation="horizontal"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-
         <Button
             android:id="@+id/btnLogin"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"
+            android:textSize="15dp"
             android:text="Login"
-            android:layout_width="120dp"
+            android:background="@color/highlightBackground"
+            android:layout_width="250dp"
             android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/backgroundDarker"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
         <Button
             android:id="@+id/btnRegister"
-            android:text="Register"
-            android:layout_width="120dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="Create an account"
+            android:layout_width="250dp"
             android:layout_height="wrap_content" />
-
-
     </LinearLayout>
 </LinearLayout>

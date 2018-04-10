@@ -8,13 +8,11 @@ public class User {
     private String username;
     private String email;
     private String password;
-    private String passwordRepeat;
 
-    public User(String username, String email, String password, String passwordRepeat) {
+    public User(String username, String email, String password) {
         this.username = username;
         this.email = email;
         this.password = password;
-        this.passwordRepeat = passwordRepeat;
     }
 
     public User(){
@@ -45,11 +43,4 @@ public class User {
         this.password = password;
     }
 
-    public String getPasswordRepeat() {
-        return passwordRepeat;
-    }
-
-    public void setPasswordRepeat(String passwordRepeat) {
-        this.passwordRepeat = passwordRepeat;
-    }
 }

@@ -1,5 +1,7 @@
 package com.example.pc.diarykitm.view.model;
 
+import android.database.Cursor;
+
 import java.util.List;
 
 /**
@@ -7,8 +9,8 @@ import java.util.List;
  */
 
 public interface UserDao {
-
-    public List<User> getAllUsers();
-
-    //TO-DO. add more method??! delete, update?
+    //Add user tp DB
+    boolean addUser(User user);
+    //Get users for login informaition
+    Cursor getUserData();
 }

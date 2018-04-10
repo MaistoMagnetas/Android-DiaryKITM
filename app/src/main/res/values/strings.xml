@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">DiaryKITM</string>
     <string name="title_activity_register">RegisterActivity</string>
+
+    <string-array name="mood_array">
+        <item>Happy</item>
+        <item>Angry</item>
+        <item>Sad</item>
+        <item>Lonely</item>
+        <item>Exhausted</item>
+        <item>Anxious</item>
+        <item>Pumped</item>
+        <item>Loved</item>
+    </string-array>
 </resources>

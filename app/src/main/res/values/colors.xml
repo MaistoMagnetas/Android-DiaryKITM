@@ -2,5 +2,11 @@
 <resources>
     <color name="colorPrimary">#202020</color>
     <color name="colorPrimaryDark">#545454</color>
-    <color name="colorAccent">#294509</color>
+    <color name="colorAccent">#a3fd6e</color>
+
+    <color name="background">#2e2f31</color>
+    <color name="backgroundDarker">#232323</color>
+    <color name="textColor">#cacaca</color>
+    <color name="highlightBackground">#88ff43</color>
+    <color name="highlightItems">#74ff22</color>
 </resources>
