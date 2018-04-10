@@ -5,21 +5,21 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="#7e5656"
+    android:background="@color/background"
     tools:context="com.example.pc.diarykitm.view.RegisterActivity">
 
     <ImageView
-        android:src="@mipmap/ic_launcher_round"
+        android:src="@drawable/logo"
         android:layout_marginTop="50dp"
         android:layout_gravity="center_horizontal"
         android:layout_width="200dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="35dp"
         android:layout_height="150dp" />
 
     <TableLayout
         android:layout_gravity="center_horizontal"
         android:padding="25dp"
-        android:background="#33ffffff"
+        android:background="@drawable/listview_item_shape"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -109,18 +109,25 @@
         android:paddingTop="15dp"
         android:layout_gravity="center_horizontal"
         android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/backgroundDarker"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent">
 
         <Button
             android:id="@+id/btnRegisterSubmit"
             android:text="Register"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_entry_add"
             android:layout_width="150dp"
             android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/btnRegisterCancel"
+            android:background="@drawable/btn_entry_delete"
             android:text="Cancel"
+            android:layout_margin="5dp"
             android:layout_width="150dp"
             android:layout_height="wrap_content" />
 

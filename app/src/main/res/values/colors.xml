@@ -9,4 +9,7 @@
     <color name="textColor">#cacaca</color>
     <color name="highlightBackground">#88ff43</color>
     <color name="highlightItems">#74ff22</color>
+    <color name="negative">#632525</color>
+    <color name="update">#6b7418</color>
+    <color name="btnTextColor">#363636</color>
 </resources>
